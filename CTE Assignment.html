@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp</title>
+    <link rel="stylesheet" href="CTE Assignment.css">
+</head>
+<body>
+    <div class="wrapper">
+        <h1>SignUp</h1>
+        <form id="form">
+            <div class="incorrect">
+                 <label for="name-input"> <!--the for attribute matters alot -->
+                   <img src="person_24dp_FFFFFF_FILL1_wght400_GRAD0_opsz24.svg" alt="person" width="24" height="24" viewBox="3">
+                </label>
+                <input required type="text" name="firstname" id="name-input" placeholder="Your name">
+            </div>
+            <div>
+                <label for="email-input">
+                    @
+                </label>
+                <input type="email" name="email" id="email-input" placeholder="Email">
+            </div>
+            <div>
+                <label for="password-input">
+                    <img src="lock_24dp_FFFFFF_FILL1_wght400_GRAD0_opsz24.svg" alt="Lock image" width="24" height="24">
+                </label>
+                <input type="password" name="password" id="password-input" placeholder="password">
+            </div>
+            <div>
+                <label for="password-repeat">
+                    <img src="password_24dp_EFEFEF_FILL1_wght400_GRAD0_opsz24.svg" alt="input password" width="24" height="24" viewBox="0">
+                </label>
+                <input type="password" name="password" id="password-repeat" placeholder="Confirm Password">
+            </div>
+            <div>
+                <button type="submit">SignUp</button>
+
+            </div>
+        </form>
+        <p>Already have an account? <a href="#">Login</a></p>
+    </div>
+    <script src="validation.js" defer></script>
+
+</body>
+</html>
